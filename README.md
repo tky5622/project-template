@@ -2,7 +2,7 @@
 
 use npm
 
-# tailwind & UI
+# tailwind & UI Library Mantine
 
 # directory structure
 
