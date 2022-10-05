@@ -12,6 +12,7 @@ import {
   PlayerPropsSchema,
 } from 'pixel-streaming'
 
+// TODO: split context file later
 const PlayerContext: React.FC = () => {
   const player = usePlayer()
   const system = useSystem()
