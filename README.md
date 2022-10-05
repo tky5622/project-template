@@ -2,6 +2,10 @@
 
 use npm
 
+# state management
+
+use GraphQL and Applo
+
 # tailwind & UI Library Mantine
 
 # directory structure
