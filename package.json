@@ -12,7 +12,7 @@
     "storybook": "start-storybook -p 6006",
     "build-storybook": "build-storybook",
     "fc:new": "hygen fc new",
-    "hook:new": "hygen hook new"
+    "hooks:new": "hygen hooks new"
   },
   "lint-staged": {
     "*.@(ts|tsx)": [
@@ -22,6 +22,7 @@
     ]
   },
   "dependencies": {
+    "@apollo/client": "^3.7.0",
     "@emotion/react": "^11.10.4",
     "@emotion/server": "^11.10.0",
     "@mantine/core": "^5.5.2",
@@ -31,17 +32,21 @@
     "@nomiclabs/hardhat-waffle": "^2.0.3",
     "@openzeppelin/contracts": "^4.7.3",
     "@tabler/icons": "^1.101.0",
+    "@testing-library/jest-dom": "^5.16.5",
+    "@testing-library/react": "^13.4.0",
     "axios": "^1.0.0",
     "chai": "^4.3.6",
     "eslint-plugin-prettier": "^4.2.1",
     "eslint-plugin-react-hooks": "^4.6.0",
     "ethereum-waffle": "^3.4.4",
     "ethers": "^5.7.1",
+    "graphql": "^16.6.0",
     "hardhat": "^2.11.2",
     "husky": "^8.0.1",
     "hygen": "^6.2.11",
     "ipfs-http-client": "^58.0.1",
     "lint-staged": "^13.0.3",
+    "msw": "^0.47.4",
     "next": "12.3.1",
     "pixel-streaming": "^3.3.6",
     "prettier": "^2.7.1",
@@ -54,6 +59,9 @@
   },
   "devDependencies": {
     "@babel/core": "^7.19.3",
+    "@graphql-codegen/cli": "^2.13.3",
+    "@graphql-codegen/typescript": "^2.7.3",
+    "@graphql-codegen/typescript-graphql-request": "^4.5.5",
     "@nomicfoundation/hardhat-toolbox": "^2.0.0",
     "@storybook/addon-actions": "^6.5.12",
     "@storybook/addon-essentials": "^6.5.12",
