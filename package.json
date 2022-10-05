@@ -8,7 +8,9 @@
     "start": "next start",
     "lint": "next lint",
     "prepare": "husky install",
-    "check-types": "bash -c tsc --noEmit"
+    "check-types": "bash -c tsc --noEmit",
+    "storybook": "start-storybook -p 6006",
+    "build-storybook": "build-storybook"
   },
   "lint-staged": {
     "*.@(ts|tsx)": [
@@ -34,17 +36,29 @@
     "prettier-plugin-tailwindcss": "^0.1.13",
     "react": "18.2.0",
     "react-dom": "18.2.0",
-    "rsuite": "^5.19.0"
+    "rsuite": "^5.19.0",
+    "storybook": "^6.5.12"
   },
   "devDependencies": {
+    "@babel/core": "^7.19.3",
+    "@storybook/addon-actions": "^6.5.12",
+    "@storybook/addon-essentials": "^6.5.12",
+    "@storybook/addon-interactions": "^6.5.12",
+    "@storybook/addon-links": "^6.5.12",
+    "@storybook/builder-webpack5": "^6.5.12",
+    "@storybook/manager-webpack5": "^6.5.12",
+    "@storybook/react": "^6.5.12",
+    "@storybook/testing-library": "^0.0.13",
     "@types/node": "18.7.23",
     "@types/react": "18.0.21",
     "@types/react-dom": "18.0.6",
     "@typescript-eslint/eslint-plugin": "^5.39.0",
     "autoprefixer": "^10.4.12",
+    "babel-loader": "^8.2.5",
     "eslint": "8.24.0",
     "eslint-config-next": "12.3.1",
     "eslint-config-prettier": "^8.5.0",
+    "eslint-plugin-storybook": "^0.6.4",
     "husky": "^8.0.0",
     "postcss": "^8.4.17",
     "tailwindcss": "^3.1.8",
